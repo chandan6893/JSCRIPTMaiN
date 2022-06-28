@@ -5,3 +5,5 @@
 <img src="image\fibonacci.png" alt="">
 <img src="image\sum.png" alt="">
 <img src="image\prod.png" alt="">
+<img src="image\primeno.png" alt="">
+<img src="image\SumOfEvNo.png" alt="">
