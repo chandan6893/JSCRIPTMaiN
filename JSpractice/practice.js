@@ -122,18 +122,49 @@
 //     console.log(space);
 // }
 
-let num=6;
-for(let i=1;i<=num;i++){
-    space='';
-    for(let j=1;j<=i;j++){
-        if((i+j)%2==0){
-            space=space+1;
-        }
-        else{
-            space=space+0;
-        }
-    }
-    console.log(space);
-}
+// let num=6;
+// for(let i=1;i<=num;i++){
+//     space='';
+//     for(let j=1;j<=i;j++){
+//         if((i+j)%2==0){
+//             space=space+1;
+//         }
+//         else{
+//             space=space+0;
+//         }
+//     }
+//     console.log(space);
+// }
+
+
+
+// let num=5;
+// let count=1;
+// for(let i=1;i<=num;i++){
+//     space='';
+//     for(let j=1;j<=i;j++){
+//         if(count>3){
+//             count=1;
+//         }
+//         space=space+count;
+//         count++;
+//     }
+//     console.log(space);
+// }
+
+// let num=5;
+
+// for(let i=num;i>=1;i--){
+//     space='';
+//     for(let j=num;j>=i;j--){
+//         space=space+j ;
+
+//     }
+//     console.log(space);
+// }
+
+
+
+
 
 
