@@ -7,7 +7,7 @@ pushPop
 
 <img src="output\UnshiftShift.png" alt="">
 
-<img src="output\length.png" alt="">
+<img src="output\Splice.png" alt="">
 
 
 
