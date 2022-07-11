@@ -1,4 +1,4 @@
-let nums=[1,2,3,4,5,6,7]
+let nums=[1,2,3,4,5,6,12]
 
     // PRINT THE FIRST ELEMENT OF THE Array
     console.log(nums[0]);
