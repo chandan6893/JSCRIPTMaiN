@@ -17,3 +17,6 @@ Array1=names.filter(function(X){
     return X.length<5;
 })
 console.log(Array1)
+
+
+
