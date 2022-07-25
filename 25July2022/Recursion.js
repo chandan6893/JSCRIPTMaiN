@@ -20,3 +20,12 @@ function findSum(arr){
 }
 console.log(findSum(nums));
 // TO UNDERSTAND THIS (SUM OF ARRAY ELEMENTS) SEE THE IMAGE
+console.log('************base to the power exponential using recursion******see the image to understand well******');
+function getPower(base,exponent){
+    if(exponent===0){
+        return 1;
+    }
+    return base*getPower(base,exponent-1);
+
+}
+console.log(getPower(2,4));
