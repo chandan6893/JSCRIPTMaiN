@@ -29,3 +29,20 @@ function getPower(base,exponent){
 
 }
 console.log(getPower(2,4));
+console.log("flatenng array without using .flat() method and by using RECURSION");
+
+function flatten(arr){
+    let flattenedArray=[];
+    for(let i=0;i<arr.length;i++){
+        if(Array.isArray(arr[i])){
+           flattenedArray=[...flattenedArray,...flatten(arr[i])]
+        }
+        else{
+            flattenedArray.push(arr[i])
+        }
+    }
+    return flattenedArray;
+
+}
+let inputArray=[10,[1,2,3,4],5];
+console.log(flatten(inputArray));
