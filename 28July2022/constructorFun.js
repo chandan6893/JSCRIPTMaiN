@@ -75,3 +75,19 @@ console.log(personA1.name);
 
 console.log(personA2.name); 
 // gives Sam
+console.log("_____________________setter________________________________________");
+const student = {
+    firstName: 'Monica',
+    
+    //accessor property(setter)
+    set changeName(a) {
+        this.firstName =a;
+    }
+};
+
+// console.log(student.firstName); // Monica
+
+// change(set) object property using a setter
+student.changeName = 'Sneha';
+
+console.log(student.firstName); // Sarah
