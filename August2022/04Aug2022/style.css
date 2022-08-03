@@ -1,0 +1,59 @@
+.input{
+    border: 10px solid rgb(92, 151, 2);
+    padding: 4px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.button{
+    background-color: greenyellow;
+    padding: 12px;
+    color: brown;
+    font-weight: bolder;
+    border-radius: 8px;
+   
+}
+
+form{
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+}
+table{
+    width: 50%;
+    text-align: center;
+    margin: 30px auto;
+    border-collapse:collapse ;
+}
+table td,th{
+    border:1px solid wheat ;
+    background-color: rgb(92, 151, 2);
+    height: 30px;
+    vertical-align: middle;
+    font-weight: bold;
+    /* border-radius: 8px; */
+    /* margin: 30px ; */
+}
+
+th:nth-child(1){
+    width:30%
+}
+th:nth-child(2){
+    width:30%
+}
+th:nth-child(3){
+    width:30%
+}
+
+th:nth-child(4){
+    width:30%
+}
+
+#id4{
+    
+    background-color: rgb(0, 255, 191);
+    color: black;
+}
+
+
+    
