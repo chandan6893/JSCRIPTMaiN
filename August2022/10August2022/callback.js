@@ -40,7 +40,7 @@ console.log("******HOW CAN WE CORRECT THE ORDER IN scenerio-1********");
 // }
 // hotelvisit();
 
-console.log("XXXXXXXXXXXXhow can we correct the oreder in......... scenerio-2..for this chech scenerio3..XXXXXXX");
+console.log("XXXXXXXXXXXXhow can we correct the oreder in......... scenerio-2..for this check scenerio3..XXXXXXX");
 
 // scenerio-3
 function prepareFood(callback){
