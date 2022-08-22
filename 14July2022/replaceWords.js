@@ -6,7 +6,7 @@ console.log(news2.replaceAll('Srilanka','India'));
 console.log('*******************************************************************************************');
 let news3='srilanka won the worldcup(small s in srilanka)';
 console.log(news3.replace(/Srilanka/i,'India'));
-// here we have to put the wordwhich we want to replace in inside the /word/after '/' put 'i',here i means (case sensitive)
+// here we have to put the word which we want to replace in inside the /word/after '/' put 'i',here i means (case sensitive)
 //   just like {console.log(news3.replace(/Srilanka/i,'India'));} it will work vice wersa Cpital to small and small to capital
 console.log('////////////////////////////////////////////////////////////////////////////////////////////////////');
 let news4='srilanka won the worldcup . Srilanka become the first country to win the 10-10 cup';

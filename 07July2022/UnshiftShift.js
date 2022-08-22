@@ -4,7 +4,7 @@ let nums=['Dhoni','Tony','Ram','Scout','Shyam'];
 // nums.length=2;
 // nums.length=12;
 // nums[10]='Puja';
-console.log(nums.shift());
+// console.log(nums.shift());
 
 // SHIFT
 // 

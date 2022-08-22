@@ -17,14 +17,14 @@
 // }
 // console.log(false);
 
-let news='Dhoni will play today';
-let target='Dhoni';
-let arr=news.split(' ')
-let isPresent=false;
-for(let i=0;i<arr.length;i++){
-    if(arr[i]===target){
-        isPresent=true;
+// let news='Dhoni will play today';
+// let target='Dhoni';
+// let arr=news.split(' ')
+// let isPresent=false;
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]===target){
+//         isPresent=true;
         
-    }
-}
-console.log(isPresent);
+//     }
+// }
+// console.log(isPresent);

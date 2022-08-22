@@ -10,8 +10,8 @@ let nums=['Dhoni','Tony','Ram','Scout','Shyam']
 // nums.pop();
 // console.log(nums);
 // POPING UP Shyam
-console.log(nums.pop());
-console.log(nums.push('Mavi'));
+// console.log(nums.pop());
+// console.log(nums.push('Mavi'));
 
 console.log(nums);
 

@@ -20,7 +20,7 @@ let sum=0;
 for(let i=0;i<row;i++){
     
         sum=sum+matrix[i][i];
-    //  there is no need of two for loops because if i and j shoud be same(i=j) then instw=ed if j we can also write i=i
+    //  there is no need of (two) for loops because if i and j shoud be same(i=j) then instead if j we can also write i=i
 }
 console.log(sum);
     

@@ -6,7 +6,8 @@ let nums=[1,2,3,4];
         return sum
 
     })
+    console.log(NewArray)
     
 
-console.log(NewArray)
+
 

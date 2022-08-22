@@ -10,7 +10,7 @@ let matrix=[
 let row=matrix.length;
 let cols=matrix[0].length;
 let sum=0;
-let start=2;
+let start=0;
 for(let i=0;i<cols;i++){
     sum=sum+matrix[i][start];
 }

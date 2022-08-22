@@ -5,9 +5,13 @@ function printGrandParent(){
     console.log("grand parent bubbling");
     printOnHover();
 }
-
+function changing(){
+    parent.style.color="white";
+    parent.style.backgroundColor="yellow";
+    parent.font
+}
 function printOnHover(){
-    console.log("HOVERING");
+    parent.style.backgroundColor="yellow";
 }
 grandParent.addEventListener("click",printGrandParent);
 // grandParent.addEventListener("mouseover",printOnHover);<========  X
@@ -48,3 +52,7 @@ const para=document.createElement("p");
 para.innerText="Kumar";
 newDiv.append(para);
 document.body.append(newDiv);
+
+let paraGraph=document.querySelector(".paraA");
+let text=paraA.innerText;
+paraA.innerText= text + 'is a good Teacher'

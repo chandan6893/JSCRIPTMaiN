@@ -7,9 +7,11 @@ for(let i=0;i<nums.length;i++){
     
     if(max<nums[i]){
         max=nums[i];
-    }
-}
-console.log(max);
+       
+} 
+
+}console.log(max);
+
 
 negativeNo=[-1,-20,-32,-17,-89,-10,-27,-100];
 let maximum=negativeNo[0];

@@ -4,7 +4,7 @@ let button=Array.from(document.getElementsByClassName("btn"));
 button.map((z)=>{
      z.addEventListener("click",(event)=>{
         let key=event.target.innerText;
-        if(key == "A/c"){
+        if(key == "C"){
          display.innerText = "";
      }
      else if(key=="del"){

@@ -5,5 +5,5 @@
 // from array and 'Singh' is 1 item that will replace the item 'Sharma' at index 2.
 
 let names=['Dhoni','Tony','Ram','Scout','Shyam'];
-names.splice(0,1,'Mahendra','Singh')
+names.splice(0,3,'Mahendra','Singh')
 console.log(names)
