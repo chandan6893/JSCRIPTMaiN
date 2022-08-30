@@ -60,7 +60,7 @@
 // }
 // dinnerScenario();
 
-// scenerio-I can be improve a lot....instead of writhinf .then .then .then we can reduce it a lot...
+// scenerio-I can be improve a lot....instead of writing .then .then .then we can reduce it a lot...
 // it has been done in scenerio-II
 console.log("**********..........scenerio-II.........*********");
 
