@@ -10,4 +10,4 @@ function changeToZero(arr, start, end){
     return arr;
   }
   console.log(changeToZero([2, 5, 10,7,5] ,2, 3))
-  exports.changeToZero = changeToZero
+  exports.changeToZero = changeToZero;

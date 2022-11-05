@@ -66,22 +66,72 @@
 
 // ----------creating own filter method----------
 
-Array.prototype.myFilter = function(callbackfn){
-    let result = [];
-    for (let i=0;i<this.length;i++){
-        if(callbackfn(this[i])){
-            result.push(this[i]);
-        }
-    }
-    return result;
-}
+// Array.prototype.myFilter = function(callbackfn){
+//     let result = [];
+//     for (let i=0;i<this.length;i++){
+//         if(callbackfn(this[i])){
+//             result.push(this[i]);
+//         }
+//     }
+//     return result;
+// }
 
-let filteredNums = [1,2,3,4].myFilter((num)=>num>2);
-console.log(filteredNums); 
+// let filteredNums = [1,2,3,4].myFilter((num)=>num>2);
+// console.log(filteredNums); 
 
 
-// reduce method
+// ..................reduce method........................
 // let reducedNum = [1,2,3,4].reduce((acc,current)=>acc + current,5);
 // console.log(reducedNum);
 
 // creating own reduce method
+// Array.prototype.myReduce =function(){
+//     console.log(this);
+// };
+// [1,2,3,4].myReduce();
+// xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// Array.prototype.myReduce =function(){
+//     // console.log(this);
+//     for(let i=0;i<this.length;i++){
+//         console.log(this[i]);
+//     }
+// };
+// [1,2,3,4].myReduce();
+
+// ***********************creatingOwnReduce***********************************
+
+// Array.prototype.myReduce =function(callbackFn,initialValue){
+//     // console.log(this);
+//     let acc = initialValue;
+//     for(let i=0;i<this.length;i++){
+//         // console.log(this[i]);
+//         acc = callbackFn(acc,this[i]);
+//     }
+//     return acc;
+// };
+// let reducedNum = [1,2,3,4].myReduce((acc,current)=>{
+//     // console.log(acc,current);
+//     return acc + current;
+// },0);
+// console.log(reducedNum);
+
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXANDXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Array.prototype.myReduce =function(callbackFn,initialValue){
+    // console.log(this);
+    let acc = initialValue;
+    for(let i=0;i<this.length;i++){
+        // console.log(this[i]);
+if(acc !== undefined){
+    acc = callbackFn(acc,this[i]);
+      }else {
+    acc = this[i];
+          }
+    }
+    return acc;
+};
+let reducedNum = [1,2,3,4].myReduce((acc,current)=>{
+    // console.log(acc,current);
+    return acc + current;
+});
+console.log(reducedNum);

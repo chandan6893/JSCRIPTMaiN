@@ -6,4 +6,18 @@
 
 let names=['Dhoni','Tony','Ram','Scout','Shyam'];
 names.splice(0,3,'Mahendra','Singh')
-console.log(names)
+console.log(names);
+
+
+// The splice method is also able to insert the elements without any removals. For that we need to set deleteCount to 0:
+let arr = ["I", "study", "JavaScript"];
+
+arr.splice(2, 0, "complex", "language");
+
+alert( arr ); 
+
+// "I", "study", "complex", "language", "JavaScript";
+
+// from index 2
+// delete 0
+// then insert "complex" and "language"

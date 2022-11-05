@@ -13,7 +13,7 @@ console.log(numsA.sort(function(a,b){
 //   })
   
   // Arrow Function
-//   (a, b) => a + b + 100;***it is not necessary ro write "return STATMENT" in ARROW functin...it is inbuilt in it
+//   (a, b) => a + b + 100;***it is not necessary to write "return STATMENT" in ARROW functin without {}...it is inbuilt in it
 
 
 

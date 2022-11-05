@@ -54,7 +54,8 @@ function getCredential(){
         };
         if(count%3===0) {
             count++;
-            return credentials;}
+            return credentials;
+        }
             count++;
         
     }
