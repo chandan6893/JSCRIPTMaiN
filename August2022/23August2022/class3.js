@@ -25,6 +25,8 @@ vasanth.car();
 let aaditya = new Child();
 aaditya.car();
 
+// read about class here=> https://www.programiz.com/javascript/classes
+
 
 
 
