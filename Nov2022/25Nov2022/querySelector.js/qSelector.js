@@ -23,3 +23,15 @@ document.querySelector('a').classList.toggle("anchor");
 function toggle(){
     document.querySelector("a").classList.toggle("anchor");
 }
+
+
+const newDiv = document.createElement("div");
+newDiv.style.width="40rem";
+newDiv.style.height="20rem";
+newDiv.style.backgroundColor="tomato";
+newDiv.style.borderRadius="1rem";
+newDiv.innerText="Hello NewDiv";
+newDiv.style.textAlign="center";
+newDiv.style.color="darkblue";
+newDiv.style.fontSize="3rem";
+document.body.appendChild(newDiv);
