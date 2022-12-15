@@ -3,6 +3,8 @@ const search=()=>{
     const ibtn= document.querySelector(".btn");
     
     const contentName = document.querySelectorAll('h2');
+
+    
     const contentPrice = document.querySelectorAll("h3");
 
     ibtn.addEventListener("click",()=>{
@@ -16,14 +18,14 @@ const search=()=>{
            }
          });
 
-         contentPrice.forEach(price=>{
-            // console.log(price)
-            if(price.textContent.toUpperCase().includes(searchBox)){
-                price.parentNode.style.display="";
-            }else{
-                price.parentNode.style.display="none";
-            }
-         })
+        //  contentPrice.forEach(price=>{
+        //     // console.log(price)
+        //     if(price.textContent.toUpperCase().includes(searchBox)){
+        //         price.parentNode.style.display="";
+        //     }else{
+        //         price.parentNode.style.display="none";
+        //     }
+        //  })
 
 
     })
