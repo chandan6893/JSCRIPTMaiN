@@ -1,7 +1,3 @@
-// fetch("https://api.openweathermap.org/data/2.5/weather?q=Patna&APPID=79330c2ed70086cc49420a6d8d9eb0f1")
-//     .then(response=>response.json())
-//     .then(dat=> console.log(dat))
-
 const form = document.querySelector(".form");
 const inputSearch= document.querySelector("#inputSearch");
 const weatherReport = document.querySelector(".weatherReport");
@@ -9,13 +5,23 @@ const weatherReport = document.querySelector(".weatherReport");
 form.addEventListener("keyup", function (e) {
   e.preventDefault;
   getWeather(inputSearch.value);
+//   e.target.value="";
 });
 
-function getWeather(city){
-    fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=79330c2ed70086cc49420a6d8d9eb0f1&units=metric`
-    )
-      .then((response) => response.json())
-      .then((dat) => console.log(dat));
+async function getWeather(city){
+   await fetch(
+     `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=79330c2ed70086cc49420a6d8d9eb0f1&units=metric`
+   )
+     .then((response) => response.json())
+     .then((dat) => showWeather(dat))
+     .catch((error) => console.log(error));
+}
+
+function showWeather(dat){
+    console.log(dat)
+    weatherReport.innerHTML = `  
+            <h1>City : ${dat.name} </h1>
+            <h1>Temp : ${dat.main.temp} °C </h1>
+            <h1>${dat.weather[0].main}  </h1>`;
 }
 
