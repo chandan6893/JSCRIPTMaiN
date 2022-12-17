@@ -1,6 +1,8 @@
 const form = document.querySelector(".form");
 const inputSearch= document.querySelector("#inputSearch");
 const weatherReport = document.querySelector(".weatherReport");
+const parent =document.querySelector(".parent");
+// const button=document.querySelector(".btn")
 
 form.addEventListener("click", function (e) {
   e.preventDefault;
@@ -14,14 +16,17 @@ form.addEventListener("click", function (e) {
    )
      .then((response) => response.json())
      .then((dat) => showWeather(dat))
-     .catch((error) => console.log(error));
+    //  .catch((error) => console.log(error));
 }
 
 function showWeather(dat){
-    console.log(dat)
-    weatherReport.innerHTML = `  
+    // console.log(dat)
+    
+    parent.innerHTML = `  
+            <div class="weatherReport" >
             <h1>City : ${dat.name} </h1>
-            <h1>Temp : ${dat.main.temp} °C </h1>
-            <h1>${dat.weather[0].main}  </h1>`;
+            <h1>Temp : ${dat.main["temp"]} °C </h1>
+            <h1>${dat.weather[0].main}  </h1>
+            </div>`
 }
 
