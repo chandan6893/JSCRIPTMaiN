@@ -33,3 +33,8 @@ function isEven(x) {
 }
 
 console.log(myFilter([2, 3, 4, 5, 7], isEven));
+for (var i = 0; i <=5; i++) {
+setTimeout(function() {
+  console.log(i)
+}, 10);
+}
