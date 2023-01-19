@@ -170,11 +170,22 @@
 //     })
 // }
 
-for (var i = 0; i < 5; i++) {
-  setTimeout(() => {
-    console.log(i);
-  });
-}
+// for (var i = 0; i < 5; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   });
+// }
+
+ function recursuion(x){
+    if(x===0){
+        return 1
+    }
+   else {
+    return x*recursuion(x-1)
+   }
+
+ }
+ recursuion(5)
 
 
 
