@@ -176,16 +176,32 @@
 //   });
 // }
 
- function recursuion(x){
-    if(x===0){
-        return 1
-    }
-   else {
-    return x*recursuion(x-1)
-   }
+//  function recursuion(x){
+//     if(x===0){
+//         return 1
+//     }
+//    else {
+//     return x*recursuion(x-1)
+//    }
 
- }
- recursuion(5)
+//  }
+//  recursuion(5)
+
+
+// class,constructor,object
+
+class Pen{
+  constructor(name,color,price){
+    this.name=name;
+    this.color=color;
+    this.price=price;
+  }
+  showDetails(){
+    console.log(`Price of pen is ${this.price}, color is ${this.color} and name is ${this.name}`)
+  }
+}
+const pen1 = new Pen("Marker","Blue","Rs100");
+pen1.showDetails();
 
 
 
