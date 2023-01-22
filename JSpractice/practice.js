@@ -202,8 +202,13 @@
 // }
 // const pen1 = new Pen("Marker","Blue","Rs100");
 // pen1.showDetails();
-console.log(x);
-var x;
+// console.log(x);
+// let x=10;
+
+let promise1 = new Promise((res,rj)=>{
+  res("hello")
+})
+promise1.then((d)=>console.log(d))
 
 
 
