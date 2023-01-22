@@ -190,18 +190,20 @@
 
 // class,constructor,object
 
-class Pen{
-  constructor(name,color,price){
-    this.name=name;
-    this.color=color;
-    this.price=price;
-  }
-  showDetails(){
-    console.log(`Price of pen is ${this.price}, color is ${this.color} and name is ${this.name}`)
-  }
-}
-const pen1 = new Pen("Marker","Blue","Rs100");
-pen1.showDetails();
+// class Pen{
+//   constructor(name,color,price){
+//     this.name=name;
+//     this.color=color;
+//     this.price=price;
+//   }
+//   showDetails(){
+//     console.log(`Price of pen is ${this.price}, color is ${this.color} and name is ${this.name}`)
+//   }
+// }
+// const pen1 = new Pen("Marker","Blue","Rs100");
+// pen1.showDetails();
+console.log(x);
+var x;
 
 
 
