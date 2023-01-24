@@ -1,5 +1,16 @@
 const button = document.querySelector("#button");
 
-button.addEventListener("click",function(){
-    console.log("Debounce")
-})
+function debounceFunc(callb,delay){
+        let timer;
+        return function(){
+            clearTimeout(timer)
+         timer=setTimeout(()=>{
+            callb.apply(this)
+         },delay)
+        }
+}
+
+button.addEventListener("click",debounceFunc(function () {
+    console.log("Debounce");
+  },2000)
+);
