@@ -210,20 +210,20 @@
 // })
 // promise1.then((d)=>console.log(d))
 
-const person1={
-  name:"Ankit",
-  age:28,
-  findAge:function(){
-    console.log("his name is ${this.name} and he is ${this.age} years old ")
-  }
-  
-}
-const person2={
-  name:"Navneel",
-  age:32
-}
+const person1 = {
+  name: "Ankit",
+  age: 28,
+  findAge: function () {
+    return `his name is ${this.name} and he is ${this.age} years old`;
+  },
+};
 
-console.log(findAge.call(person2));
+const person2 = {
+  name: "Navneel",
+  age: 32,
+};
+
+console.log(person1.findAge.call(person2));
 
 
 
