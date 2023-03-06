@@ -205,10 +205,20 @@
 // console.log(x);
 // let x=10;
 
-let promise1 = new Promise((res,rj)=>{
-  res("hello")
-})
-promise1.then((d)=>console.log(d))
+// let promise1 = new Promise((res,rj)=>{
+//   res("hello")
+// })
+// promise1.then((d)=>console.log(d))
+
+const person1={
+  name:"Ankit",
+  age:28,
+  findAge:function(){
+    console.log("his name is ${this.name} and he is ${this.age} years old ")
+  }
+  
+}
+
 
 
 
