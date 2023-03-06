@@ -218,7 +218,12 @@ const person1={
   }
   
 }
+const person2={
+  name:"Navneel",
+  age:32
+}
 
+console.log(findAge.call(person2));
 
 
 
