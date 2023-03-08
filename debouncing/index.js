@@ -16,3 +16,18 @@
 // );
 
 
+const button= document.getElementById("button");
+
+function debounceFun(fun,delay){
+let timer;
+   return function(){
+      clearTimeout(timer);
+      timer=setTimeout(()=>{
+         fun.apply(this,arguments)
+      },delay)
+   }
+}
+
+button.addEventListener("click",debounceFun(function(){
+   console.log("DEBOUNCING")
+},2000))
