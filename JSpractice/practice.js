@@ -224,13 +224,28 @@
 // };
 
 // console.log(person1.findAge.call(person2));
-let sum = 0;
-for (let i = 1; i < 3; i++) {
-  for (let j = 1; j < 3; j++) {
-    sum = sum + j;
+// let sum = 0;
+// for (let i = 1; i < 3; i++) {
+//   for (let j = 1; j < 3; j++) {
+//     sum = sum + j;
+//   }
+// }
+// console.log(sum);
+
+// **********Custom map Method
+
+function myFun(cb,arr){
+
+  let newArr=[];
+  for(let i=0;i<arr.length;i++){
+    newArr.push(cb(arr[i]))
   }
+  return newArr
 }
-console.log(sum);
+function square(n){
+  return n*n;
+}
+myFun(square,[1,2,3])
 
 
 
