@@ -234,18 +234,33 @@
 
 // **********Custom map Method
 
-function myFun(cb,arr){
+// function myFun(cb,arr){
 
-  let newArr=[];
-  for(let i=0;i<arr.length;i++){
-    newArr.push(cb(arr[i]))
+//   let newArr=[];
+//   for(let i=0;i<arr.length;i++){
+//     newArr.push(cb(arr[i]))
+//   }
+//   return newArr
+// }
+// function square(n){
+//   return n*n;
+// }
+// myFun(square,[1,2,3])
+
+// custom filter method
+
+function myFun(cb, arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (cb(arr[i])) {
+      newArr.push(arr[i]);
+    }
   }
-  return newArr
+  return newArr;
 }
-function square(n){
-  return n*n;
+function evenNo(x) {
+  return x % 2 === 0;
 }
-myFun(square,[1,2,3])
 
-
+console.log(myFun(evenNo, [1, 2, 3, 4]));
 
