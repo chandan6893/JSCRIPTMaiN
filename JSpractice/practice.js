@@ -210,21 +210,27 @@
 // })
 // promise1.then((d)=>console.log(d))
 
-const person1 = {
-  name: "Ankit",
-  age: 28,
-  findAge: function () {
-    return `his name is ${this.name} and he is ${this.age} years old`;
-  },
-};
+// const person1 = {
+//   name: "Ankit",
+//   age: 28,
+//   findAge: function () {
+//     return `his name is ${this.name} and he is ${this.age} years old`;
+//   },
+// };
 
-const person2 = {
-  name: "Navneel",
-  age: 32,
-};
+// const person2 = {
+//   name: "Navneel",
+//   age: 32,
+// };
 
-console.log(person1.findAge.call(person2));
-
+// console.log(person1.findAge.call(person2));
+let sum = 0;
+for (let i = 1; i < 3; i++) {
+  for (let j = 1; j < 3; j++) {
+    sum = sum + j;
+  }
+}
+console.log(sum);
 
 
 
