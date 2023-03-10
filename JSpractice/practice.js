@@ -277,14 +277,30 @@ const person = {
 
 // console.log(details());
 
-Function.prototype.myBind = function (obj) {
-  const func = this;
-  return function () {
-    return func.call(obj);
-  };
-};
+// Function.prototype.myBind = function (obj) {
+//   const func = this;
+//   return function () {
+//     return func.call(obj);
+//   };
+// };
 
-const details = getDetails.myBind(person);
-console.log(details());
-details();
+// const details = getDetails.myBind(person);
+// console.log(details());
+// details();
+
+class Pen {
+  constructor(name, color, price) {
+    this.name = name;
+    this.color = color;
+    this.price = price;
+  }
+  showDetails() {
+    console.log(
+      `name:${this.name} , color:${this.color} and price:${this.price}`
+    );
+  }
+}
+
+const details = new Pen("Marker", "Blue", "Rs100");
+details.showDetails();
 
