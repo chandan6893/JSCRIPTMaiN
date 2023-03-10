@@ -249,18 +249,42 @@
 
 // custom filter method
 
-function myFun(cb, arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (cb(arr[i])) {
-      newArr.push(arr[i]);
-    }
-  }
-  return newArr;
-}
-function evenNo(x) {
-  return x % 2 === 0;
+// function myFun(cb, arr) {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (cb(arr[i])) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr;
+// }
+// function evenNo(x) {
+//   return x % 2 === 0;
+// }
+
+// console.log(myFun(evenNo, [1, 2, 3, 4]));
+
+// custom bind method
+function getDetails() {
+  return `his full name is ${this.fname} ${this.lname}`;
 }
 
-console.log(myFun(evenNo, [1, 2, 3, 4]));
+const person = {
+  fname: "Ankit",
+  lname: "Singh",
+};
+// const details=getDetails.bind(person)
+
+// console.log(details());
+
+Function.prototype.myBind = function (obj) {
+  const func = this;
+  return function () {
+    return func.call(obj);
+  };
+};
+
+const details = getDetails.myBind(person);
+console.log(details());
+details();
 
