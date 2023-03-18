@@ -304,16 +304,22 @@ const person = {
 // const details = new Pen("Marker", "Blue", "Rs100");
 // details.showDetails();
 
-async function getData() {
-  return new Promise((res, rej) => {
-    try {
-      res("Hello");
-    } catch (err) {
-      rej(err);
-    }
-  });
-}
-getData().then((d) => {
-  console.log(d);
-});
+// async function getData() {
+//   return new Promise((res, rej) => {
+//     try {
+//       res("Hello");
+//     } catch (err) {
+//       rej(err);
+//     }
+//   });
+// }
+// getData().then((d) => {
+//   console.log(d);
+// });
 
+async function getData(){
+  return await Promise.resolve("Hello Guys");
+}
+getData().then((d)=>{
+  console.log(d)
+})
