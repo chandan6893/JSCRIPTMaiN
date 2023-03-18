@@ -288,19 +288,32 @@ const person = {
 // console.log(details());
 // details();
 
-class Pen {
-  constructor(name, color, price) {
-    this.name = name;
-    this.color = color;
-    this.price = price;
-  }
-  showDetails() {
-    console.log(
-      `name:${this.name} , color:${this.color} and price:${this.price}`
-    );
-  }
-}
+// class Pen {
+//   constructor(name, color, price) {
+//     this.name = name;
+//     this.color = color;
+//     this.price = price;
+//   }
+//   showDetails() {
+//     console.log(
+//       `name:${this.name} , color:${this.color} and price:${this.price}`
+//     );
+//   }
+// }
 
-const details = new Pen("Marker", "Blue", "Rs100");
-details.showDetails();
+// const details = new Pen("Marker", "Blue", "Rs100");
+// details.showDetails();
+
+async function getData() {
+  return new Promise((res, rej) => {
+    try {
+      res("Hello");
+    } catch (err) {
+      rej(err);
+    }
+  });
+}
+getData().then((d) => {
+  console.log(d);
+});
 
