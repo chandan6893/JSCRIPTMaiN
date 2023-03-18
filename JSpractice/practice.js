@@ -317,9 +317,17 @@ const person = {
 //   console.log(d);
 // });
 
-async function getData(){
-  return await Promise.resolve("Hello Guys");
-}
-getData().then((d)=>{
-  console.log(d)
-})
+// async function getData(){
+//   return await Promise.resolve("Hello Guys");
+// }
+// getData().then((d)=>{
+//   console.log(d)
+// })
+
+let Person = {
+  name: "anky",
+  age: 20,
+  add: "Delhi",
+};
+const { name, age, add } = Person;
+console.log(add);
