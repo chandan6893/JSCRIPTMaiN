@@ -324,10 +324,21 @@ const person = {
 //   console.log(d)
 // })
 
-let Person = {
-  name: "anky",
-  age: 20,
-  add: "Delhi",
-};
-const { name, age, add } = Person;
-console.log(add);
+// let Person = {
+//   name: "anky",
+//   age: 20,
+//   add: "Delhi",
+// };
+// const { name, age, add } = Person;
+// console.log(add);
+
+
+let num=5;
+for(let i=1;i<=num;i++){
+    let stars =" ";
+    for(let j=1;j<=num;j++){
+        stars=stars+"*";
+        // console.log(stars);
+    }
+    console.log(stars);
+}
