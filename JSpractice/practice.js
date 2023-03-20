@@ -333,12 +333,21 @@ const person = {
 // console.log(add);
 
 
-let num=5;
-for(let i=1;i<=num;i++){
-    let stars =" ";
-    for(let j=1;j<=num;j++){
-        stars=stars+"*";
-        // console.log(stars);
-    }
-    console.log(stars);
+// let num=5;
+// for(let i=1;i<=num;i++){
+//     let stars =" ";
+//     for(let j=1;j<=num;j++){
+//         stars=stars+"*";
+//         // console.log(stars);
+//     }
+//     console.log(stars);
+// }
+
+for (var i = 0; i < 3; i++) {
+  function func(x) {
+    setTimeout(function () {
+      console.log(i);
+    }, 10 * i);
+  }
+  func(i);
 }
