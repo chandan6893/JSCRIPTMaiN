@@ -364,14 +364,28 @@ const person = {
 //   b = temp;
 // }
 
-const num=100;
-let x=0;
-let y=1;
-let fn=x+y;
-console.log(x);
-while(fn<num){
-console.log(fn)
-fn=x+y;
-x=y;
-y=fn;
+// const num=100;
+// let x=0;
+// let y=1;
+// let fn=x+y;
+// console.log(x);
+// while(fn<num){
+// console.log(fn)
+// fn=x+y;
+// x=y;
+// y=fn;
+// }
+
+// prime No or Not
+function isPrime(num) {
+  for (var i = 2; i < num; i++) {
+    if (num % i === 0) {
+      console.log("Not a Prime No");
+      break;
+    } else {
+      console.log(`${num} is a prime no`);
+      break;
+    }
+  }
 }
+isPrime(7);
