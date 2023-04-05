@@ -343,11 +343,23 @@ const person = {
 //     console.log(stars);
 // }
 
-for (var i = 0; i < 3; i++) {
-  function func(x) {
-    setTimeout(function () {
-      console.log(i);
-    }, 10 * i);
-  }
-  func(i);
+// for (var i = 0; i < 3; i++) {
+//   function func(x) {
+//     setTimeout(function () {
+//       console.log(i);
+//     }, 10 * i);
+//   }
+//   func(i);
+// }
+
+// fibbonaci
+let a = 0;
+let b = 1;
+console.log(a);
+console.log(b);
+for (let i = 0; i < 10; i++) {
+  let temp = a + b;
+  console.log(temp);
+  a = b;
+  b = temp;
 }
