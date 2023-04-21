@@ -10,3 +10,20 @@ while(fn < num){
     x=y;
     y=fn;
 }
+
+// 2. Write a program to get a sum of even and odd numbers between 1-100.
+
+let sumOfEvenNos = 0;
+let sumOfOddNos = 0;
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 === 0) {
+    sumOfEvenNos += i;
+  } else {
+    sumOfOddNos += i;
+  }
+}
+
+console.log("Sum of even numbers between 1 to 100: " + sumOfEvenNos);
+console.log("Sum of odd numbers between  1 to 100: " + sumOfOddNos);
+
