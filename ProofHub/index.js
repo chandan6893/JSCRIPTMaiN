@@ -27,3 +27,7 @@ for (let i = 1; i <= 100; i++) {
 console.log("Sum of even numbers between 1 to 100: " + sumOfEvenNos);
 console.log("Sum of odd numbers between  1 to 100: " + sumOfOddNos);
 
+// 3. Write a command to find if a given number is even/odd without a conditional statement?
+
+let numb = 12; 
+console.log(numb % 2 === 0 ? "Even" : "Odd");
