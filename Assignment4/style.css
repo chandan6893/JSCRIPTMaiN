@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+}
+header{
+    background-color: royalblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+header h1{
+    color: white;
+    margin: 0 25px;
+}
+header nav{
+    margin: 0 25px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 10px;
+}
+header nav ul li a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+.bar{
+    color: white;
+    margin: 0 15px;
+    font-size: x-large;
+    display: none;
+    cursor: pointer;
+}
+.imgContainer {
+    margin: 15px;
+    position: relative;
+}
+.imgContainer img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    float: left;
+    margin-right: 2rem;
+    
+}
+.imgContainer p{
+    position: absolute;
+    color: white;
+    top: 13rem;
+    padding: 25px;
+}
+.secondSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.secSecFirstDiv{
+    width: 50%;
+    margin-right: 10px;
+}
+.secSecSecDiv{
+    width: 50%;
+    
+}
+.secSecSecDiv img{
+    width: 250px;
+    border-radius: 6px;
+    float: right;
+    shape-outside: circle(50%);
+    shape-margin: 2rem;
+    margin: 1rem;
+}
+.thirdSec{
+    width: 100%;
+    height: 60px;
+    margin: 15px;
+     padding: 8px;
+
+}
+footer{
+    background-color:darkslategrey;
+    width: 100%;
+    height: 80px;
+    color: white;
+    
+}
+.copyrightContainer p{
+    margin: 4px;
+    padding:4px;
+    line-height: 1.5;
+    text-align: center;
+}
+.secSecFirstDiv ul{
+   margin-left: 10%; 
+}
+
+@media only screen and (max-width:720px) {
+    .bar{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        top: 80px;
+        background-color:white;
+        z-index: 2;
+        color: white;
+        width: 100%;
+        height: 50%;
+        right: -100%;
+    }
+    header #nav__check:checked ~ nav{
+        left:0;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        text-align: right;
+        margin: 0 50px;
+  }
+    header nav ul li{
+        margin: 10px 0;
+    }
+    .imgContainer img{
+        width: 400px;
+        height: 300px;
+        margin-left: 0.8rem;
+    }
+    .firstSection p{
+        margin: 4px;
+        padding: 2px;
+        position: absolute;
+        top: 11rem;
+        padding: 25px;
+    }
+    .secondSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .secSecSecDiv img{
+    width: 300px;
+    border-radius: 8px;
+    float: right;
+    shape-outside: circle(50%);
+    shape-margin: 2rem;
+    margin: 1rem;
+}
+}
+
