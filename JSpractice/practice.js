@@ -265,14 +265,14 @@
 // console.log(myFun(evenNo, [1, 2, 3, 4]));
 
 // custom bind method
-function getDetails() {
-  return `his full name is ${this.fname} ${this.lname}`;
-}
+// function getDetails() {
+//   return `his full name is ${this.fname} ${this.lname}`;
+// }
 
-const person = {
-  fname: "Ankit",
-  lname: "Singh",
-};
+// const person = {
+//   fname: "Ankit",
+//   lname: "Singh",
+// };
 // const details=getDetails.bind(person)
 
 // console.log(details());
@@ -377,15 +377,88 @@ const person = {
 // }
 
 // prime No or Not
-function isPrime(num) {
-  for (var i = 2; i < num; i++) {
-    if (num % i === 0) {
-      console.log("Not a Prime No");
-      break;
-    } else {
-      console.log(`${num} is a prime no`);
-      break;
-    }
-  }
-}
-isPrime(7);
+// function isPrime(num) {
+//   for (var i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       console.log("Not a Prime No");
+//       break;
+//     } else {
+//       console.log(`${num} is a prime no`);
+//       break;
+//     }
+//   }
+// }
+// isPrime(7);
+
+
+
+// function sum(){
+//   console.log(x);
+//   var x=10;
+// }
+
+// sum();
+
+
+// {
+//   let x=10;
+//   const y=20;
+//   var z=5;
+// }
+// let x=10;
+// y=5;
+
+// console.log(x === 10 ? "true" : "false");
+
+// const person={
+//   name:"Kumar",
+//   age:20,
+//   getAge: function(){
+//     const  print=()=>{
+//       console.log(this.age);
+//     }
+//     print();
+//   }
+// }
+// person.getAge()
+
+// let count =  0;
+// let timer=setInterval(()=>{
+  
+//   console.log(count=count+1)
+// if (count === 10) {
+//   clearInterval(timer);
+// }
+// },1000);
+ 
+// (function(){
+//   console.log("first")
+// })()
+
+// let myName = "Chandan Kumar";
+
+// function myRevFun(){
+//   let newArr=[];
+// for(let i=myName.length;i>=0;i--){
+//  console.log(myName[i]);
+
+
+// }
+// // console.log(newArr);
+// }
+// myRevFun()
+
+
+// let date = new Date();
+
+// function dateFun(){
+//   console.log(date.getDay)
+// }
+// dateFun()
+
+const container = document.querySelector(".container");
+const btn= document.querySelector(".btn");
+
+btn.addEventListener("click",(e)=>{
+ console.log(e)
+})
