@@ -70,3 +70,26 @@ Array.prototype.myFilter = function (cb) {
 
 const result = arr.myFilter((el) => el > 2);
 console.log(result);
+
+// another way of polyfill for filter
+
+// const arr = [1, 2, 3, 4, 5];
+// const result=arr.filter((el)=>el>2);
+// console.log(result);
+function isEven(item) {
+  return item % 2 === 0;
+}
+
+Array.prototype.myFilter = function (cb) {
+  // console.log(this)
+  let newArr = [];
+  for (let i = 0; i < this.length; i++) {
+    if (cb(this[i])) {
+      newArr.push(this[i]);
+    }
+  }
+  return newArr;
+};
+
+const result2 = arr.myFilter(isEven);
+console.log(result2);
