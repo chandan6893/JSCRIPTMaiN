@@ -93,3 +93,25 @@ Array.prototype.myFilter = function (cb) {
 
 const result2 = arr.myFilter(isEven);
 console.log(result2);
+
+// polyfill for reduce
+
+// const arr = [1, 2, 3, 4, 5];
+
+// const sum=arr.reduce((acc,ele)=>{
+//   console.log(acc,ele)
+//   return acc+ele;
+// },0)
+// console.log(sum)
+
+Array.prototype.myReduce = function (cb, initialValue) {
+  acc = initialValue;
+  for (let i = 0; i < this.length; i++) {
+    acc = acc ? cb(acc, this[i]) : this[i];
+  }
+  return acc;
+};
+const result3= arr.myReduce((acc, currEle) => {
+  return acc + currEle;
+}, 0);
+console.log(result3);
