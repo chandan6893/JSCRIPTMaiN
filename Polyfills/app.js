@@ -115,3 +115,28 @@ const result3= arr.myReduce((acc, currEle) => {
   return acc + currEle;
 }, 0);
 console.log(result3);
+
+
+// polyfill for Call
+const person1 = {
+  name: "Ankit",
+};
+
+const person2 = {
+  name: "Sumit",
+};
+
+function printAge(age) {
+  console.log(`${this.name} is ${age} years old`);
+}
+
+// printAge.call(person2,25)
+
+Function.prototype.myCall = function (obj, ...args) {
+  // console.log("THIS",this)
+
+  obj.getAge = this;
+  obj.getAge(...args);
+};
+
+printAge.myCall(person2, 25);
